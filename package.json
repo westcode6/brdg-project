@@ -1,0 +1,15 @@
+{
+  "name": "BrdgFactory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "factory-css": "tailwindcss build src/factory.css -o public/factory.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^2.1.1"
+  }
+}

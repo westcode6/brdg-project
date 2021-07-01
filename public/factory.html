@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bdrg factory</title>
+    <link rel="stylesheet" href="/public/factory.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="top-container px-5 sm:px-16 py-2 bg-yellow-400 flex justify-between">
+        <div class="contact-info flex flex-col sm:flex-row">
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-location-arrow"></i></i></span>
+                </button>
+                <span class="text-gray-700 text-sm font-semibold">52-40 Crest Drmapplewood USA</span>
+            </div>
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-clock"></i></span>
+                </button>
+                <span class="text-gray-700 text-sm font-semibold">Mon-Fri 09:00am - 06:00pm</span>
+            </div>
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-phone-alt"></i></span>
+                </button>
+                <span class="text-gray-700 text-sm font-semibold">(0000) 906-501-7306</span>
+            </div>
+        </div>
+        <div class="flex flex-col sm:flex-row">
+            <button class="px-2 bg-yellow-200 rounded m-2">
+                <span class="text-sm text-gray-900"><i class="fab fa-linkedin-in"></i></span>
+            </button>
+            <button class="px-2 bg-yellow-200 rounded m-2">
+                <span class="text-sm text-gray-900"><i class="fab fa-facebook-f"></i></span>
+            </button>
+            <button class="px-2 bg-yellow-200 rounded m-2">
+                <span class="text-sm text-gray-900"><i class="fab fa-twitter"></i></span>
+            </button>
+        </div>
+    </div>
+<!-- Navigation Section -->
+<nav class="navigation px-5 sm:px-16 bg-white flex flex-col sm:flex-row justify-between">
+    <div class="navbar-logo flex justify-between m-3">
+        <div class="logo">
+            <h1 class="text-3xl text-gray-900 font-bold">BRDG</h1>
+            <span class="block text-1xl text-gray-400 font-semibold">FACTORY</span>
+        </div>
+        <button class="toggle-nav bg-yellow-400 px-3 rounded block sm:hidden" id="navToggler">
+            <span class="text-2xl text-gray-900"><i class="fas fa-bars"></i></span>
+        </button>
+    </div>
+    <div class="navbar-content items-center hidden sm:block" id="navContent">
+        <ul class="m-0 sm:m-3 text-center flex flex-col sm:flex-row">
+            <a href="#" class="m-4 font-semibold text-yellow-400">Home</a>
+            <a href="#" class="m-4 font-semibold">About Us</a>
+            <a href="#" class="m-4 font-semibold">Services</a>
+            <a href="#" class="m-4 font-semibold">Our Team</a>
+            <a href="#" class="m-4 font-semibold">Contact Us</a>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header Section -->
+<header class="Header" style="background-image: url('/images/pexels-pixabay-33266.jpg'); background-position: center; background-size: cover; height: 550px;">
+    <div class="m-auto pt-40 sm:pt-48 w-full text-center" style="width: 650px;">
+        <h2 class="text-white">
+            <span class="border-l-2 border-yellow-400 font-semibold pl-3">WELCOME TO BRDG FACTORY</span>
+        </h2>
+        <h1 class="text-6xl text-white font-bold">Combine Technologies for <span class="text-6xl text-yellow-400 font-bold">Better Quality</span></h1>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="About" class="py-20">
+    <div class="grid grid-cols-1 sm:grid-cols-3 px-10 sm:px-24">
+        <div class="about-card bg-white text-center px-10 py-10 m-3 shadow-md ">
+            <span class=""><img src="/images/engineering.png" class="w-16 m-auto " alt=""></span>
+            <div class="about-card-content">
+                <h2 class="py-4 text-lg text-gray-900 font-bold">Storage Of Resources</h2>
+                <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="about-card bg-white  text-center px-10 py-10 m-3 shadow-md">
+            <span class=""><img src="/images/manufacture.png" class="w-16 m-auto " alt=""></span>
+            <div class="about-card-content">
+                <h2 class="py-4 text-lg text-gray-900 font-bold">Technology Industry</h2>
+                <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+
+        <div class="about-card bg-yellow-400 text-center px-10 py-10 m-3 shadow-md">
+            <h1 class="text-2xl font-semibold">Get Your Quote And Start Today</h1>
+            <p class="text-md py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eaque.</p>
+            <h1 class="px-6 py-3 bg-white text-center ">
+                <a href="#" class="text-sm font-bold">GET YOUR QUOTE</a>
+            </h1>
+        </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service -->
+<section id="Service" class="bg-gray-200  sm:px-24 py-28 pb-48">
+    <div class=" w-9/12 sm:w-6/12 m-auto text-center">
+        <h1 class="text-2xl text-gray-700 font-bold items-center flex flex-col">
+            <span>This Is What We Do</span>
+            <span class="relative border-b-2 border-yellow-400 w-10 py-4 block"></span>
+        </h1>
+        <p class="py-10 text-sm leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae quam. Amet, magnam perferendis! Ea, sint ex quos tempora, error corrupti quis id tenetur nostrum.</p>
+    </div>
+</section>
+
+<!-- Service-Gallery -->
+<section id="Service-gallery" class=""  style="background-image: url('/images/pexels-photomix-company-224924.jpg'); background-position: center; background-size: cover; height: 550px;">
+    <div class="flex flex-col w-9/12 m-auto relative">
+        <div class="grid grid-cols-1 sm:grid-cols-3 absolute -top-36">
+            <div class="col-span-2">
+                <img src="/images/mika-baumeister-74tW4FXP4Hw-unsplash.jpg" class="object-cover" alt="">
+            </div>
+            <div class="col-span-1 bg-white px-10 py-10">
+                <h1 class="text-lg text-gray-700 font-bold items-left flex flex-col">
+                    <span>We Provide Professional Services</span>
+                    <span class="relative border-b-4 border-yellow-400 w-10 py-1 block"></span>
+                </h1>
+                <p class="text-gray-500 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deserunt cumque totam? Pariatur, dolor voluptate ipsum dolores mollitia ut laborum alias error placeat voluptas numquam inventore quaerat blanditiis delectus odio.</p>
+
+                <h1 class="text-center text-xs px-3 py-3 bg-yellow-400">
+                    <a href="#" class=" text-white font-bold">READ MORE</a>
+                </h1>
+              
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4     absolute top-96">
+            <div class="text-white text-center mr-2 sm:mr-20">
+                <span class="text-7xl block font-bold">123</span>
+                <span class="text-xs block">Professional Skills</span>
+            </div>
+            <div class="text-white text-center mr-2 sm:mr-20">
+                <span class="text-7xl block font-bold">152</span>
+                <span class="text-xs block">Professional Skills</span>
+            </div>
+            <div class="text-white text-center mr-2 sm:mr-20">
+                <span class="text-7xl block font-bold">89</span>
+                <span class="text-xs block">Professional Skills</span>
+            </div>
+            <div class="text-white text-center mr-2 sm:mr-20">
+                <span class="text-7xl block font-bold">134</span>
+                <span class="text-xs block">Professional Skills</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section id="Skills" class="px-5 sm:px-24 py-24 bg-white">
+   <div class="grid grid-cols-1 sm:grid-cols-3">
+    <div class="skills-panel col-span-2 px-2 sm:px-16">
+        <h1 class="items-left flex flex-col">
+            <span class="text-2xl text-gray-700 font-bold ">Professional Skills</span>
+            <span class="relative border-b-4 border-yellow-400 w-10 py-2 block"></span>
+
+            <p class="py-3 text-sm w-full sm:w-2/3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio dignissimos vero, id nobis assumenda perferendis libero labore ipsa, repudiandae</p>
+        </h1>
+
+        <div class="skills-loader w-full sm:w-8/12">
+            <div class="rounded-full bg-gray-400 w-full text-gray-900 border-gray-200 mt-3">
+                <h1 class="w-11/12 bg-yellow-400 text-xs text-gray-900 py-1 rounded-full px-2 flex justify-between">
+                    <span>Professional Skills</span>
+                    <span> 89%</span>
+                </h1>
+            </div>
+
+            <div class="rounded-full bg-gray-400 w-full text-white border-gray-900 mt-8">
+                <h1 class="w-9/12 bg-yellow-400 text-xs text-gray-900 py-1 rounded-full px-2 flex justify-between ">
+                    <span>Professional Skills</span>
+                    <span > 69%</span>
+                </h1>
+            </div>
+
+            <div class="rounded-full bg-gray-400 w-full text-white border-gray-200 mt-8">
+                <h1 class="w-11/12 bg-yellow-400 text-xs text-gray-900 py-1 rounded-full px-2 flex justify-between">
+                    <span>Professional Skills</span>
+                    <span> 89%</span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="skills-set mt-20 sm:mt-0">
+        <div class="skills-content w-4/2 flex items-center mr-4 mb-6 sm:mb-0">
+            <span><img src="/images/bar-graph.png" class="w-20" alt=""></span>
+            <h1 class="ml-4">
+                <span class="text-md text-gray-600 font-bold">Storage of Process</span>
+                <span class="text-sm text-gray-600 py-1 block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum illum similique..</span>
+            </h1>
+        </div>
+
+        <div class="skills-content w-4/2 flex items-center mr-4 mb-6 sm:mb-0">
+            <span><img src="/images/process.png" class="w-24" alt=""></span>
+            <h1 class="ml-4">
+                <span class="text-mg text-gray-600 font-bold">Storage of Process</span>
+                <span class="text-sm text-gray-600 py-1 block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum illum similique.</span>
+            </h1>
+        </div>
+
+        <div class="skills-content w-4/2 flex items-center mr-4 mb-6 sm:mb-0">
+            <span><img src="/images/magnifying-glass.png" class="w-24" alt=""></span>
+            <h1 class="ml-4">
+                <span class="text-md text-gray-600 font-bold">Storage of Process</span>
+                <span class="text-sm text-gray-600 py-1 block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorum illum similique.</span>
+            </h1>
+        </div>
+    </div>
+   </div>
+</section>
+
+<!-- Pages -->
+<section id="Pages" class="grid grid-cols-2 sm:grid-cols-4 w-full sm:w-11/12 px-2 sm:px-24 py-16 bg-gray-800 m-auto">
+    <div class="flex items-center m-6">
+        <span class="text-3xl text-gray-300 mr-2"><i class="fas fa-spell-check"></i></span>
+        <h4 class="flex flex-col text-gray-300">
+            <span>MOUSE CHECK</span>
+            <span class="text-xs block">Lorem ipsum dolor.</span>
+        </h4>
+    </div>
+    <div class="flex items-center m-6">
+        <span class="text-3xl text-gray-300 mr-2"><i class="fas fa-spell-check"></i></span>
+        <h4 class="flex flex-col text-gray-300">
+            <span>MOUSE CHECK</span>
+            <span class="text-xs block">Lorem ipsum dolor.</span>
+        </h4>
+    </div>
+    <div class="flex items-center m-6">
+        <span class="text-3xl text-gray-300 mr-2"><i class="fas fa-spell-check"></i></span>
+        <h4 class="flex flex-col text-gray-300">
+            <span>MOUSE CHECK</span>
+            <span class="text-xs block">Lorem ipsum dolor.</span>
+        </h4>
+    </div>
+    <div class="flex items-center m-6">
+        <span class="text-3xl text-gray-300 mr-2"><i class="fas fa-spell-check"></i></span>
+        <h4 class="flex flex-col text-gray-300">
+            <span>MOUSE CHECK</span>
+            <span class="text-xs block">Lorem ipsum dolor.</span>
+        </h4>
+    </div>
+</section>
+
+<!-- Testimonial Section -->
+<section id="Testimonial" class="py-24 px-2 sm:px-24" style="background-image: url('/images/continent.jpg'); background-position: center; background-size: cover; ">
+    <h1 class="text-center items-center py-4">
+        <span class="text-3xl text-gray-700 font-semibold">Testimonials</span>
+        <span class="w-10 m-auto border-b-4 border-yellow-400 block py-2"></span>
+    </h1>
+    <div class="grid grid-cols-1 sm:grid-cols-3 w-11/12 m-auto">
+        <div class="px-10 bg-white py-10 ml-0 sm:ml-5 mb-3 sm:mb-0">
+            <img src="/images/itay-verchik-G3ZAhAJ2ojc-unsplash.jpg" class="object-cover w-24  rounded-full m-auto" alt="">
+            <div class="text-center py-4">
+                <label for="name" class="text-lg font-bold text-gray-700">"Great Support"</label>
+                <h1 class="flex justify-center  py-3">
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="far fa-star"></i></span>
+                </h1>
+                <h2 class="leading-6 text-sm text-gray-500 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis molestiae eveniet rerum.</h2>
+                <h1 class="text-md font-semibold pt-8">-Pitter Hollinwood</h1>
+
+            </div>
+        </div>
+
+        <div class="px-10 bg-white py-10 ml-0 sm:ml-5 mb-3 sm:mb-0">
+            <img src="/images/linkedin-sales-solutions-pAtA8xe_iVM-unsplash.jpg" class="object-cover w-24  rounded-full m-auto" alt="">
+            <div class="text-center py-4">
+                <label for="name" class="text-lg font-bold text-gray-700">"Good People"</label>
+                <h1 class="flex justify-center  py-3">
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="far fa-star"></i></span>
+                </h1>
+                <h2 class="leading-6 text-sm text-gray-500 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis molestiae eveniet rerum.</h2>
+                <h1 class="text-md font-semibold pt-8">-Pitter Hollinwood</h1>
+
+            </div>
+        </div>
+
+        <div class="px-10 bg-white py-10 ml-0 sm:ml-5 mb-3 sm:mb-0">
+            <img src="/images/roland-samuel-MZ5A24H1JqU-unsplash.jpg" class="object-cover w-24 h-24  rounded-full m-auto" alt="">
+            <div class="text-center py-4">
+                <label for="name" class="text-lg font-bold text-gray-700">"Best Technology"</label>
+                <h1 class="flex justify-center  py-3">
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="fas fa-star"></i></span>
+                    <span class="mr-2 text-xs text-yellow-400"><i class="far fa-star"></i></span>
+                </h1>
+                <h2 class="leading-6 text-sm text-gray-500 pt-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis molestiae eveniet rerum.</h2>
+                <h1 class="text-md font-semibold pt-8">-Pitter Hollinwood</h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section -->
+<section id="Quote" class="px-24 flex flex-col sm:flex-row justify-between py-10 bg-yellow-400">
+    <div class="">
+        <h1 class="text-2xl text-gray-700 font-semibold">Get Your Quote or Call:  <span class="text-white">(0000) 906-501-7306</span></h1>
+       
+        <h1 class="block text-lg text-gray-600 py-2">Lorem ipsum dolor sit amet consectetur.</h1>
+    </div>
+    <div class="items-center">
+        <button class="text-center text-gray-700 font-semibold bg-white px-5 py-4 items-center rounded">
+            GET YOUR QUOTE
+         </button>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer id="footer" class="px-16 py-24 bg-footerBg">
+    <div class="grid grid-cols-1 sm:grid-cols-3">
+        <div class="text-left text-gray-100 m-4">
+            <h2 class=" text-2xl font-semibold">About Bridge Factory</h2>
+            <p class="py-10 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium natus.</p>
+
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo vero aut maxime ut Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sapiente?.</p>
+        </div>
+
+        <div class="contact-info sm:flex-row m-4">
+            <h2 class="text-2xl text-gray-100 font-semibold">Our Location</h2>
+            <div class="info mr-2 flex items-center mt-9">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-envelope"></i></span>
+                </button>
+                <span class="text-gray-100 text-sm font-semibold">westentcode@gmail.com</span>
+            </div>
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-location-arrow"></i></i></span>
+                </button>
+                <span class="text-gray-100 text-sm font-semibold">52-40 Crest Drmapplewood USA</span>
+            </div>
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-clock"></i></span>
+                </button>
+                <span class="text-gray-100 text-sm font-semibold">Mon-Fri 09:00am - 06:00pm</span>
+            </div>
+            <div class="info mr-2 flex items-center">
+                <button class="px-2 bg-yellow-200 rounded m-2">
+                    <span class="text-sm text-gray-900"><i class="fas fa-phone-alt"></i></span>
+                </button>
+                <span class="text-gray-100 text-sm font-semibold">(0000) 906-501-7306</span>
+            </div> 
+        </div>
+
+        <div class="text-left text-gray-100 m-4">
+            <h2 class=" text-2xl font-semibold">Subscribe To NewsLetter</h2>
+            <div class="form-group mt-10 mb-2">
+                <input type="text" class="form-control bg-footerBgDark rounded  py-3 w-72 px-6" placeholder="Your Name">
+            </div>
+            <div class="form-group  mb-2">
+                <input type="text" class="form-control bg-footerBgDark rounded  py-3 w-72 px-6" placeholder="Your Email">
+            </div>
+
+           <button class="px-6 py-3 rounded font-bold bg-yellow-400">SEND</button>
+        </div>
+    </div>
+</footer>
+<!-- Fooet Copyright -->
+<footer id="footerCopyright" class="px-16 py-1 bg-footerBgDark flex justify-between">
+    <h1 class="text-sm text-gray-100 pt-5">&copy; Copyright Kingdom Developer</h1>
+    <div class="flex flex-row sm:flex-row pt-3">
+        <button class="px-2 bg-yellow-200 rounded m-2">
+            <span class="text-sm text-gray-900"><i class="fab fa-linkedin-in"></i></span>
+        </button>
+        <button class="px-2 bg-yellow-200 rounded m-2">
+            <span class="text-sm text-gray-900"><i class="fab fa-facebook-f"></i></span>
+        </button>
+        <button class="px-2 bg-yellow-200 rounded m-2">
+            <span class="text-sm text-gray-900"><i class="fab fa-twitter"></i></span>
+        </button>
+    </div>
+</footer>
+    <script src="/public/main.js"></script>
+</body>
+</html>
